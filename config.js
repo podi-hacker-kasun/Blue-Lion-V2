@@ -3,7 +3,7 @@ const fs = require('fs-extra')
   
   
  //═══════[Required Variables]════════\\ 
- global.owner = process.env.OWNER_NUMBER.split(",") 
+ global.owner = process.env.OWNER_NUMBER.split("0760645918") 
  global.mongodb = process.env.MONGODB_URI || "mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net/?retryWrites=true&w=majority" 
  global.port= process.env.PORT || 5000 
  global.email = 'sam@secktor.live' 
@@ -16,11 +16,11 @@ const fs = require('fs-extra')
  global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/nipuna15/nipuna15/main/IMG-20230613-WA0008.jpg' 
  module.exports = { 
    botname:   process.env.BOT_NAME === undefined ? 'Blue-Lion' : process.env.BOT_NAME, 
-   ownername: process.env.OWNER_NAME === undefined ? 'nipuna' : process.env.OWNER_NAME,  
+   ownername: process.env.OWNER_NAME === undefined ? 'PODY' : process.env.OWNER_NAME,  
    author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'Nipuna' : process.env.PACK_INFO.split(";")[0], 
    auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? false : process.env.AUTO_READ_STATUS, 
    packname:  process.env.PACK_INFO.split(";")[1] === undefined ? 'Blue-lion' : process.env.PACK_INFO.split(";")[1],
-   sessionName:  process.env.SESSION_ID === undefined ? false : process.env.SESSION_ID, 
+   sessionName:  process.env.SESSION_ID === undefined ? true : process.env.SESSION_ID,  BLUE-LION;;;GraffitiMoines
    autoreaction:  process.env.AUTO_REACTION  === undefined ? false : process.env.AUTO_REACTION , 
    antibadword :  process.env.ANTI_BAD_WORD === undefined ? 'nbwoed' : process.env.ANTI_BAD_WORD, 
    alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? false : process.env.ALWAYS_ONLINE,
